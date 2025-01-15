@@ -1,0 +1,176 @@
+/* Προσθήκη styles για τα νέα containers */
+#bio-content,
+#blue-period-paintings,
+#pink-period-paintings,
+#cubism-paintings,
+#exhibitions-content,
+#links-content,
+#management-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Προαιρετικό: προσθέτει σκιά για καλύτερη εμφάνιση */
+}
+
+/* Επιπλέον styles για τα headings μέσα στα containers */
+#bio-content h2,
+#blue-period-paintings h2,
+#pink-period-paintings h2,
+#cubism-paintings h2,
+#exhibitions-content h2,
+#links-content h2,
+#management-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Εάν χρειάζεται περισσότερο χώρο μεταξύ των sections */
+.content-section {
+  margin-bottom: 30px;
+}
+
+.content-section.hidden {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+/* Εάν τα containers χρειάζονται responsive behavior 
+
+@media (max-width: 768px) {
+  #bio-content,
+  #blue-period-paintings,
+  #pink-period-paintings,
+  #cubism-paintings,
+  #exhibitions-content,
+  #links-content,
+  #management-content {
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  .paintings-container {
+    flex-direction: column; // Σε μικρές οθόνες, οι πίνακες να εμφανίζονται σε στήλη 
+  }
+
+  .painting {
+    flex: 1 1 100%; //Σε μικρές οθόνες, ένας πίνακας ανά σειρά
+  }
+}
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "aside main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+nav {
+  grid-area: nav;
+  background-color: #444;
+  padding: 10px;
+  overflow: hidden;
+  height: 60px; /* Predefined static height */
+  box-sizing: border-box; /* Ensures padding doesn't increase the height */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;  
+  margin-right: 20px; 
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block; 
+  padding: 10px; 
+}
+
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+main {
+  grid-area: main;
+}
+
+
+/* Στυλ για τους πίνακες */
+.paintings-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Απόσταση μεταξύ των πινάκων */
+}
+
+.painting {
+  flex: 1 1 calc(33.333% - 20px); /* 3 πίνακες ανά σειρά */
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.painting img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.painting p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+
+.hidden {
+  display: none;
+}

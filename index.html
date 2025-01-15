@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<!--###################################################-->
+<!--                       HEAD                        -->
+<!--###################################################-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Βιογραφία και Έργα του [Όνομα Ζωγράφου]</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--###################################################-->
+<!--                       BODY                        -->
+<!--###################################################-->
+<body>
+  <header>
+    <h1>Βιογραφία και Έργα του [Όνομα Ζωγράφου]</h1>
+  </header>
+  
+
+<!--###################################################-->
+<!--                       NAV                         -->
+<!--###################################################-->
+  <nav>
+    <ul>
+      <li><a href="#" id="bio-link">Βιογραφία</a></li>
+      <li><a href="#" id="paintings-link">Πίνακες</a></li>
+      <li><a href="#" id="exhibitions-link">Εκθέσεις</a></li>
+      <li><a href="#" id="links-link">Σύνδεσμοι</a></li>
+      <li><a href="#" id="management-link">Διαχείριση</a></li>
+    </ul>
+  </nav>
+
+<!--###################################################-->
+<!--                      ASIDE                        -->
+<!--###################################################-->
+  <aside id="sidebar">
+    
+    <!-- Πλευεικο μενου για βιογραφια -->
+    <div id="bio-sidebar" class="sidebar-section hidden">
+      <h3>Βιογραφία</h3>
+      <ul>
+        <li><a href="#" id="bio-early-life">Χρόνια</a></li>
+        <li><a href="#" id="bio-career">Καριέρα</a></li>
+        <li><a href="#" id="bio-legacy">Κληρονομιά</a></li>
+      </ul>
+    </div>
+
+    <!-- Πλευρικό μενού για "Πίνακες" -->
+    <div id="paintings-sidebar" class="sidebar-section hidden">
+      <h3>Πίνακες</h3>
+      <ul>
+        <li><a href="#" id="blue-period">Μπλε περίοδος</a></li>
+        <li><a href="#" id="pink-period">Ροζ περίοδος</a></li>
+        <li><a href="#" id="cubism">Κυβισμος</a></li>
+      </ul>
+    </div>
+
+    <!-- Πλευεικο μενου για Εκθέσεις -->
+    <div id="exhibition-sidebar" class="sidebar-section hidden">
+      <h3>Εκθέσεις</h3>
+      <ul>
+        <li><a href="#" id="exhibition-1">Άλλες εκθέσεις</a></li>
+        <li><a href="#" id="exhibition-2">Εκθέσεις του Pablo Picasso</a></li>
+      </ul>
+    </div>
+
+    <!-- Πλευεικο μενου για Συνδεσμοι -->
+    <div id="links-sidebar" class="sidebar-section hidden">
+      <h3>Συνδεσμοι</h3>
+      <ul>
+        <li><a href="#" id="link-1">Συνδεσμος 1</a></li>
+        <li><a href="#" id="link-2">Συνδεσμος 2</a></li>
+        <li><a href="#" id="link-3">Συνδεσμος 3</a></li>
+      </ul>
+    </div>
+
+    <!-- Πλευεικο μενου για Διαχειριση -->
+    <div id="management-sidebar" class="sidebar-section hidden">
+      <h3>Διαχείριση</h3>
+      <ul>
+        <!-- Σύνδεση - Θα εμφανίζεται μόνο αν δεν έχει γίνει σύνδεση -->
+        <li id="login-link">
+          <a href="#" id="login-action">Σύνδεση</a>
+        </li>
+
+        <!-- Διαχείριση Εκθέσεων (μόνον όταν έχει γίνει σύνδεση διαχειριστή) -->
+        <li id="manage-exhibitions-link" class="hidden">
+          <a href="#" id="action-1">Διαχείριση Εκθέσεων</a>
+        </li>
+
+        <!-- Διαχείριση Συνδέσμων (μόνον όταν έχει γίνει σύνδεση διαχειριστή) -->
+        <li id="manage-links-link" class="hidden">
+          <a href="#" id="action-2">Διαχείριση Συνδέσμων</a>
+        </li>
+
+        <!-- Αποσύνδεση (μόνον όταν έχει γίνει σύνδεση διαχειριστή) -->
+        <li id="logout-link" class="hidden">
+          <a href="#" id="action-3">Αποσύνδεση</a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  
+  <main id="main-content">
+    <!-- Container για τη βιογραφία -->
+    <div id="bio-content" class="content-section hidden">
+      <h2>Βιογραφία</h2>
+      <p>Εδώ θα μπει η βιογραφία του ζωγράφου...</p>
+    </div>
+  
+    <!-- Container για τους πίνακες της "Μπλε περιόδου" -->
+    <div id="blue-period-paintings" class="content-section hidden">
+      <h2>Μπλε Περίοδος</h2>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/blue_period/1.jpeg" alt="Πίνακας Μπλε Περίοδος 1">
+          <p>Τίτλος Πίνακα 1</p>
+        </div>
+        <div class="painting">
+          <img src="images/blue_period/2.jpg" alt="Πίνακας Μπλε Περίοδος 2">
+          <p>Τίτλος Πίνακα 2</p>
+        </div>
+        <div class="painting">
+          <img src="images/blue_period/3.jpg" alt="Πίνακας Μπλε Περίοδος 3">
+          <p>Τίτλος Πίνακα 3</p>
+        </div>
+        <div class="painting">
+          <img src="images/blue_period/4.jpg" alt="Πίνακας Μπλε Περίοδος 3">
+          <p>Τίτλος Πίνακα 3</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Container για τους πίνακες της "Ροζ περιόδου" -->
+    <div id="pink-period-paintings" class="content-section hidden">
+      <h2>Ροζ Περίοδος</h2>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/pink_period/1.jpg" alt="Πίνακας Ροζ Περίοδος 1">
+          <p>Τίτλος Πίνακα 1</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/pink_period/2.jpg" alt="Πίνακας Ροζ Περίοδος 1">
+          <p>Τίτλος Πίνακα 1</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/pink_period/3.jpg" alt="Πίνακας Ροζ Περίοδος 1">
+          <p>Τίτλος Πίνακα 1</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/pink_period/4.jpg" alt="Πίνακας Ροζ Περίοδος 1">
+          <p>Τίτλος Πίνακα 1</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/pink_period/5.jpg" alt="Πίνακας Ροζ Περίοδος 1">
+          <p>Τίτλος Πίνακα 1</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/pink_period/6.jpg" alt="Πίνακας Ροζ Περίοδος 1">
+          <p>Τίτλος Πίνακα 1</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/pink_period/7.jpg" alt="Πίνακας Ροζ Περίοδος 1">
+          <p>Τίτλος Πίνακα 1</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/pink_period/8.jpg" alt="Πίνακας Ροζ Περίοδος 1">
+          <p>Τίτλος Πίνακα 1</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/pink_period/9.jpg" alt="Πίνακας Ροζ Περίοδος 1">
+          <p>Τίτλος Πίνακα 1</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/pink_period/10.jpg" alt="Πίνακας Ροζ Περίοδος 1">
+          <p>Τίτλος Πίνακα 1</p>
+        </div>
+      </div>
+
+    </div>
+  
+    <!-- Container για τους πίνακες της "Ροζ περιόδου" -->
+    <div id="cubism-paintings" class="content-section hidden">
+      <h2>Ροζ Περίοδος</h2>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/cubism/1.jpg" alt="Πίνακας Ροζ Περίοδος 3">
+          <p>Τίτλος Πίνακα 3</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/cubism/2.jpg" alt="Πίνακας Ροζ Περίοδος 3">
+          <p>Τίτλος Πίνακα 3</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/cubism/3.jpg" alt="Πίνακας Ροζ Περίοδος 3">
+          <p>Τίτλος Πίνακα 3</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/cubism/4.jpg" alt="Πίνακας Ροζ Περίοδος 3">
+          <p>Τίτλος Πίνακα 3</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/cubism/5.jpg" alt="Πίνακας Ροζ Περίοδος 3">
+          <p>Τίτλος Πίνακα 3</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/cubism/6.jpg" alt="Πίνακας Ροζ Περίοδος 3">
+          <p>Τίτλος Πίνακα 3</p>
+        </div>
+      </div>
+      <div class="paintings-container">
+        <div class="painting">
+          <img src="images/cubism/7.jpg" alt="Πίνακας Ροζ Περίοδος 3">
+          <p>Τίτλος Πίνακα 3</p>
+        </div>
+        <div class="paintings-container">
+          <div class="painting">
+            <img src="images/cubism/8.jpg" alt="Πίνακας Ροζ Περίοδος 3">
+            <p>Τίτλος Πίνακα 3</p>
+          </div>
+        </div>
+        <div class="paintings-container">
+          <div class="painting">
+            <img src="images/cubism/9.jpg" alt="Πίνακας Ροζ Περίοδος 3">
+            <p>Τίτλος Πίνακα 3</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+    <!--###################################################-->
+    <!--                      ΕΚΘΕΣΕΙΣ                     -->
+    <!--###################################################-->
+    <!-- Container για τις εκθέσεις -->
+    <div id="exhibitions-content" class="content-section hidden">
+      <h2>Εκθέσεις</h2>
+      <!-- Δυναμική λίστα εκθέσεων περιεχει το exhibitions.json -->
+      <ul id="exhibitions-list"></ul>
+    </div>
+    
+    <!--###################################################-->
+    <!--                     ΣΥΝΔΕΣΜΟΙ                     -->
+    <!--###################################################-->
+    <!-- Container για τους συνδέσμους -->
+    <div id="links-content" class="content-section hidden">
+      <h2>Σύνδεσμοι</h2>
+      <p>περιεχομενο</p>
+    </div>
+    
+    <!--###################################################-->
+    <!--                    ΔΙΑΧΕΙΡΙΣΗ                     -->
+    <!--###################################################-->
+    <!-- Container για τη διαχείριση -->
+    <div id="management-content" class="content-section hidden">
+      <h2>Διαχείριση</h2>
+      <form id="loginForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required />
+        <input type="reset" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 [Το Όνομα Σου]. Όλα τα δικαιώματα διατηρούνται.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>

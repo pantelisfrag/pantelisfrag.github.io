@@ -1,0 +1,19 @@
+{
+    "exhibitions": [
+      {
+        "title": "Εκθεση Πικασο 1",
+        "description": "Περιγραφη εκθεσης",
+        "date": "2025-04-10",
+        "location": "Εθνική Πινακοθήκη",
+        "url": "https://www.voria.gr/article/arhaia-eleytherna-egkainiastike-i-ekthesi-pikaso-stin-kriti-i-hara-tis-zois-apo-ti"
+      },
+      {
+        "title": "Εκθεση Πικασο 2",
+        "description": "Περιγραφή εκεθσης",
+        "date": "2025-04-10",
+        "location": "Εθνική Πινακοθήκη",
+        "url": "https://www.voria.gr/article/thessaloniki-entyposiazoyn-ta-erga-toy-pamplo-pikaso"
+      }
+    ]
+  }
+  
